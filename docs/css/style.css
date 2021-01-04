@@ -1,41 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("http://fonts.cdnfonts.com/css/post-no-bills-jaffna");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@font-face {
-  font-family: 'Post No Bills Jaffna Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Post No Bills Jaffna Regular"), url("../fonts/PostNoBillsJaffna-Regular.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Post No Bills Jaffna Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Post No Bills Jaffna Bold"), url("../fonts/PostNoBillsJaffna-Bold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Post No Bills Jaffna Light Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Post No Bills Jaffna Light Regular"), url("../fonts/PostNoBillsJaffna-Light.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Post No Bills Jaffna Medium Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Post No Bills Jaffna Medium Regular"), url("../fonts/PostNoBillsJaffna-Medium.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Post No Bills Jaffna SemiBold Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Post No Bills Jaffna SemiBold Regular"), url("../fonts/PostNoBillsJaffna-SemiBold.woff") format("woff"); }
-
-@font-face {
-  font-family: 'Post No Bills Jaffna ExtraBold Regular';
-  font-style: normal;
-  font-weight: normal;
-  src: local("Post No Bills Jaffna ExtraBold Regular"), url("../fonts/PostNoBillsJaffna-ExtraBold.woff") format("woff"); }
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -126,6 +91,8 @@ header {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .telephone-login .login p {
+      margin-left: 10px; }
 
 .header__nav {
   position: relative;
@@ -143,7 +110,6 @@ header {
           align-items: center;
   color: grey;
   background-color: #0F0F0F;
-  background-size: cover;
   width: auto; }
   .header__nav .wrapper {
     -webkit-box-orient: horizontal;
@@ -159,7 +125,7 @@ header {
     .header__nav .wrapper .logo a {
       text-decoration: none;
       font-size: 36px;
-      font-family: "Post No Bills Jaffna SemiBold Regular";
+      font-family: "Post No Bills Jaffna SemiBold";
       color: #FFFF; }
     .header__nav .wrapper .header-menu-group {
       display: -webkit-box;
@@ -194,6 +160,8 @@ header {
               -ms-flex-align: center;
                   align-items: center;
           text-transform: uppercase; }
+          .header__nav .wrapper .header-menu-group .header__nav-menu li div {
+            margin: 0; }
         .header__nav .wrapper .header-menu-group .header__nav-menu li:hover {
           background-color: grey;
           color: #FFFFFF; }
@@ -206,9 +174,21 @@ header {
   margin-left: 20px; }
 
 .main__info {
-  background: url("../img/Rectangle3.jpg");
-  background-size: cover;
-  padding-top: 160px; }
+  background: url("../img/Rectangle3.jpg") no-repeat center center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto; }
   .main__info .porter__cube {
     margin: 0 auto;
     display: -webkit-box;
@@ -229,9 +209,12 @@ header {
             flex-direction: column; }
     .main__info .porter__cube h1 {
       font-size: 64px;
-      font-family: "Post No Bills Jaffna SemiBold Regular";
+      font-family: "Post No Bills Jaffna SemiBold";
+      font-style: normal;
       color: #FFFF;
       position: relative;
+      font-weight: bold;
+      line-height: 96px;
       padding: 0;
       margin: 0 auto; }
     .main__info .porter__cube p {
@@ -330,16 +313,16 @@ header {
 
 .collection {
   width: 45%;
-  background: url("../img/Rectangle8.jpg");
+  background: url("../img/Rectangle8.jpg") no-repeat center center;
   background-size: cover;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -webkit-justify-content: end;
+  -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
@@ -393,7 +376,8 @@ header {
   height: 600px; }
   .collection2018 .old-colletion-img {
     width: 45%;
-    background-image: url("../img/Rectangle9.jpg"); }
+    background: url("../img/Rectangle9.jpg") no-repeat center center;
+    background-size: cover; }
   .collection2018 .collection2018-info {
     width: 55%;
     background-color: #000000;
@@ -496,7 +480,7 @@ header {
       margin-bottom: 75px; }
 
 footer {
-  background-image: url("../img/Rectangle15.jpg");
+  background: url("../img/Rectangle15.jpg") no-repeat center center;
   background-size: cover; }
   footer .wrapper {
     display: -webkit-box;
@@ -524,6 +508,7 @@ footer {
         margin-bottom: 48px; }
       footer .wrapper .about p, footer .wrapper .category p, footer .wrapper .mailing p {
         font-family: 'PT Sans', sans-serif;
+        width: 350px;
         line-height: 150%;
         font-size: 14px;
         font-style: normal;
@@ -745,46 +730,16 @@ footer {
   .header__nav {
     height: auto; }
     .header__nav .wrapper {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-box-pack: normal;
-      -webkit-justify-content: normal;
-          -ms-flex-pack: normal;
-              justify-content: normal;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-      .header__nav .wrapper .header-menu-group {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-            -ms-flex-direction: column;
-                flex-direction: column; }
-        .header__nav .wrapper .header-menu-group .header__nav-menu {
-          -webkit-box-orient: vertical;
-          -webkit-box-direction: normal;
-          -webkit-flex-direction: column;
-              -ms-flex-direction: column;
-                  flex-direction: column; }
-          .header__nav .wrapper .header-menu-group .header__nav-menu li {
-            padding: 2px;
-            margin: 2px; }
-        .header__nav .wrapper .header-menu-group .search, .header__nav .wrapper .header-menu-group .basket {
-          margin: 5px auto;
-          -webkit-align-self: auto;
-              -ms-flex-item-align: auto;
-                  align-self: auto; }
-          .header__nav .wrapper .header-menu-group .search .iconify, .header__nav .wrapper .header-menu-group .basket .iconify {
-            font-size: 24px; }
-        .header__nav .wrapper .header-menu-group .basket {
-          display: none;
-          position: absolute;
-          top: 0;
-          right: 30%; }
+      .header__nav .wrapper .header-menu-group .header__nav-menu li {
+        margin: 2px; }
   .new-collection:after {
     left: 28%; }
   .collection2018-info .catalog-btn {
@@ -886,5 +841,91 @@ footer {
     margin: 0; }
   .login {
     font-size: 15px; } }
+
+.toggle-button {
+  margin-top: 5px;
+  position: relative;
+  width: 44px;
+  height: 40px;
+  padding: 4px;
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  transition: .25s;
+  z-index: 15;
+  display: none; }
+
+.close-btn {
+  display: none; }
+
+@media (max-width: 680px) {
+  .toggle-button {
+    display: block; }
+  .header__nav .wrapper .header-menu-group .header__nav-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto; }
+  .header__nav .wrapper {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .close-btn {
+    display: block;
+    -webkit-align-self: end;
+        -ms-flex-item-align: end;
+            align-self: end;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    font-size: 30px; }
+    .close-btnhover {
+      background-color: rgba(0, 0, 0, 0); } }
+
+.toggle-button:hover {
+  cursor: pointer; }
+
+.toggle-button .menu-bar {
+  position: absolute;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  width: 80%;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
+.toggle-button .menu-bar-top {
+  border: 4px solid #555;
+  border-bottom: none;
+  top: 0; }
+
+.toggle-button .menu-bar-middle {
+  height: 4px;
+  background-color: #555;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  top: 4px; }
+
+.toggle-button .menu-bar-bottom {
+  border: 4px solid #555;
+  border-top: none;
+  top: 22px; }
+
+.menu-wrap {
+  background-color: #191B1C;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  -webkit-transition: .25s;
+  -o-transition: .25s;
+  transition: .25s;
+  z-index: 10; }
+
+.menu-show {
+  margin-left: 0px;
+  left: 0;
+  height: 100%; }
 
 /*# sourceMappingURL=style.css.map */

@@ -43,8 +43,8 @@ gulp.task('build', gulp.series('sass-compile', async function(){
         .pipe(gulp.dest('docs/js'));
     gulp.src('src/css/*.css')
         .pipe(gulp.dest('docs/css'));
-    gulp.src('src/fonts/*.*')
-        .pipe(gulp.dest('docs/fonts'));
+    gulp.src('src/slick/*.*')
+        .pipe(gulp.dest('docs/slick'));
     gulp.src('src/img/*.*')
         .pipe(gulp.dest('docs/img'));
     gulp.src('src/*.html')
