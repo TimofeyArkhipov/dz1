@@ -1,0 +1,890 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: 'Post No Bills Jaffna Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Post No Bills Jaffna Regular"), url("../fonts/PostNoBillsJaffna-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Post No Bills Jaffna Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Post No Bills Jaffna Bold"), url("../fonts/PostNoBillsJaffna-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Post No Bills Jaffna Light Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Post No Bills Jaffna Light Regular"), url("../fonts/PostNoBillsJaffna-Light.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Post No Bills Jaffna Medium Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Post No Bills Jaffna Medium Regular"), url("../fonts/PostNoBillsJaffna-Medium.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Post No Bills Jaffna SemiBold Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Post No Bills Jaffna SemiBold Regular"), url("../fonts/PostNoBillsJaffna-SemiBold.woff") format("woff"); }
+
+@font-face {
+  font-family: 'Post No Bills Jaffna ExtraBold Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Post No Bills Jaffna ExtraBold Regular"), url("../fonts/PostNoBillsJaffna-ExtraBold.woff") format("woff"); }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  color: #FFFFFF; }
+  body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  body p {
+    line-height: 150%; }
+
+.wrapper {
+  max-width: 1100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+header {
+  background-color: #000; }
+  header .wrapper {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.telephone-login {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 44px;
+  background-color: #000000;
+  color: grey;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  width: 100%; }
+  .telephone-login ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .telephone-login ul li {
+      margin-right: 10px; }
+    .telephone-login ul li:nth-child(3):before {
+      margin-right: 10px;
+      content: "|";
+      overflow: hidden; }
+    .telephone-login ul li:nth-child(3):after {
+      margin-left: 10px;
+      content: "|"; }
+  .telephone-login .login {
+    margin-left: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.header__nav {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: grey;
+  background-color: #0F0F0F;
+  background-size: cover;
+  width: auto; }
+  .header__nav .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%; }
+    .header__nav .wrapper .logo a {
+      text-decoration: none;
+      font-size: 36px;
+      font-family: "Post No Bills Jaffna SemiBold Regular";
+      color: #FFFF; }
+    .header__nav .wrapper .header-menu-group {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .header__nav .wrapper .header-menu-group .header__nav-menu {
+        list-style: none;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-self: end;
+            -ms-flex-item-align: end;
+                align-self: end;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-align: center;
+        height: 80px; }
+        .header__nav .wrapper .header-menu-group .header__nav-menu li {
+          color: grey;
+          padding: 31px 20px;
+          display: block;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          text-transform: uppercase; }
+        .header__nav .wrapper .header-menu-group .header__nav-menu li:hover {
+          background-color: grey;
+          color: #FFFFFF; }
+
+.iconify {
+  font-size: 15px;
+  color: #FFFFFF; }
+
+.basket, .search {
+  margin-left: 20px; }
+
+.main__info {
+  background: url("../img/Rectangle3.jpg");
+  background-size: cover;
+  padding-top: 160px; }
+  .main__info .porter__cube {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 320px;
+    height: 320px;
+    border: 4px solid #FFFFFF;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .main__info .porter__cube h1 {
+      font-size: 64px;
+      font-family: "Post No Bills Jaffna SemiBold Regular";
+      color: #FFFF;
+      position: relative;
+      padding: 0;
+      margin: 0 auto; }
+    .main__info .porter__cube p {
+      font-family: 'PT Sans', sans-serif;
+      text-transform: uppercase;
+      font-size: 22px;
+      padding: 0;
+      margin: 0 auto; }
+    .main__info .porter__cube h1:after {
+      content: '';
+      border-bottom: 3px solid #FFFFFF;
+      position: absolute;
+      width: 190px;
+      top: 90%;
+      left: 0; }
+  .main__info .lorem_info {
+    margin: 80px auto auto;
+    font-size: 16px;
+    text-transform: uppercase;
+    max-width: 730px;
+    text-align: center;
+    padding-bottom: 130px; }
+
+.collection-and-season {
+  max-width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.season {
+  position: relative;
+  width: 55%;
+  background-color: #000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 100px; }
+  .season h2 {
+    position: relative;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 100px;
+    margin-bottom: 100px; }
+    .season h2:after {
+      content: '';
+      border-bottom: 3px solid #FFFFFF;
+      position: absolute;
+      width: 120px;
+      bottom: -30%;
+      left: 30%; }
+  .season .img-group {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .season .img-group .img-container > div {
+      background-color: #191B1C;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 260px;
+      height: 405px; }
+    .season .img-group .img-container .product-name {
+      font-family: "Playfair Display";
+      font-size: 18px; }
+    .season .img-group .img-container .product-price {
+      font-family: "Playfair Display";
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 150%; }
+
+.collection {
+  width: 45%;
+  background: url("../img/Rectangle8.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 10%; }
+
+.new-collection {
+  position: relative;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  font-family: "Playfair Display";
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px; }
+  .new-collection:after {
+    content: '';
+    border-bottom: 2px solid #FFFFFF;
+    position: absolute;
+    width: 120px;
+    bottom: -55%;
+    right: 34%; }
+
+.catalog-btn {
+  margin-bottom: 100px;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  width: 138px;
+  height: 47px;
+  font-weight: lighter;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase; }
+  .catalog-btn:hover {
+    background-color: #fff;
+    color: #000; }
+
+.collection2018 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 600px; }
+  .collection2018 .old-colletion-img {
+    width: 45%;
+    background-image: url("../img/Rectangle9.jpg"); }
+  .collection2018 .collection2018-info {
+    width: 55%;
+    background-color: #000000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .collection2018 .collection2018-info .product-price {
+      max-width: 450px;
+      text-align: center; }
+    .collection2018 .collection2018-info .catalog-btn {
+      margin-top: 60px;
+      width: 311px; }
+
+.new-arrivals {
+  width: 100%;
+  background-color: #000; }
+  .new-arrivals .prev, .new-arrivals .next {
+    visibility: hidden; }
+  .new-arrivals .new-collection {
+    margin: 130px auto; }
+  .new-arrivals .gallery {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 150px; }
+    .new-arrivals .gallery .img-container > div {
+      background-color: #191B1C;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      width: 260px;
+      height: 405px; }
+    .new-arrivals .gallery .img-container .product-name {
+      font-family: "Playfair Display";
+      font-size: 18px; }
+    .new-arrivals .gallery .img-container .product-price {
+      font-family: "Playfair Display";
+      font-size: 16px;
+      font-weight: bold; }
+
+.brands {
+  width: 100%;
+  background-color: #0F0F0F; }
+  .brands > .new-collection {
+    margin: 75px auto; }
+    .brands > .new-collection:after {
+      content: '';
+      border-bottom: 2px solid #FFFFFF;
+      position: absolute;
+      width: 120px;
+      bottom: -100%;
+      right: 34%; }
+  .brands .brand-collection {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .brands .brand-collection img {
+      width: 255px;
+      margin-bottom: 75px; }
+
+footer {
+  background-image: url("../img/Rectangle15.jpg");
+  background-size: cover; }
+  footer .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    footer .wrapper .about, footer .wrapper .category, footer .wrapper .mailing {
+      margin: 88px 0;
+      max-width: 357px;
+      height: 225px; }
+      footer .wrapper .about h3, footer .wrapper .category h3, footer .wrapper .mailing h3 {
+        font-size: 24px;
+        font-family: 'Playfair Display';
+        text-transform: uppercase;
+        font-style: normal;
+        margin-bottom: 48px; }
+      footer .wrapper .about p, footer .wrapper .category p, footer .wrapper .mailing p {
+        font-family: 'PT Sans', sans-serif;
+        line-height: 150%;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: normal; }
+      footer .wrapper .about ul, footer .wrapper .category ul, footer .wrapper .mailing ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        max-width: 280px; }
+        footer .wrapper .about ul li, footer .wrapper .category ul li, footer .wrapper .mailing ul li {
+          font-family: "PT Sans", sans-serif;
+          font-size: 14px;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          padding: 15px;
+          background-color: #0F0F0F;
+          margin: 0 10px 10px 0; }
+          footer .wrapper .about ul li:hover, footer .wrapper .category ul li:hover, footer .wrapper .mailing ul li:hover {
+            background-color: #ffffff;
+            color: #0F0F0F; }
+    footer .wrapper .mailing {
+      font-family: "PT Sans"; }
+      footer .wrapper .mailing input {
+        margin-top: 35px;
+        width: 210px;
+        background-color: rgba(255, 255, 255, 0.4);
+        padding-left: 10px;
+        height: 40px;
+        border: none; }
+      footer .wrapper .mailing button {
+        text-transform: uppercase;
+        width: 140px;
+        height: 40px;
+        background-color: #0F0F0F;
+        color: #ffffff;
+        border: none; }
+        footer .wrapper .mailing button:hover {
+          background-color: #fff;
+          color: #0F0F0F; }
+
+.copyrights {
+  background-color: #0F0F0F; }
+  .copyrights .wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.prev, .next {
+  position: absolute;
+  border: 0px solid #fff;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-weight: lighter;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 25px; }
+
+@media (max-width: 1371px) {
+  .collection-and-season {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .collection-and-season .season {
+      width: auto;
+      padding-bottom: 30px; }
+      .collection-and-season .season .img-group {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .collection-and-season .season .img-group .slick-list {
+          margin: 0 auto;
+          width: 260px; }
+        .collection-and-season .season .img-group > div {
+          margin: 0 auto;
+          text-align: center; }
+      .collection-and-season .season h2 {
+        padding-top: 15px;
+        margin-bottom: 50px; }
+    .collection-and-season .collection {
+      width: auto; }
+      .collection-and-season .collection .new-collection:after {
+        left: 34%; } }
+
+@media (max-width: 1090px) {
+  .wrapper {
+    margin: 0 20px; }
+  .brand-collection {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+
+@media (max-width: 960px) {
+  footer .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    footer .wrapper .about, footer .wrapper .category, footer .wrapper .mailing {
+      margin: 10px; }
+      footer .wrapper .about .footer-name, footer .wrapper .category .footer-name, footer .wrapper .mailing .footer-name {
+        margin: 20px auto;
+        text-align: center; }
+      footer .wrapper .about .nav-footer, footer .wrapper .category .nav-footer, footer .wrapper .mailing .nav-footer {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        margin-bottom: 10px; }
+    footer .wrapper .category {
+      height: auto; }
+  .season .img-group {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .season .img-group .img-container {
+      width: auto;
+      height: auto; }
+    .season .img-group .img-container > div {
+      width: 214px;
+      height: 213px; } }
+
+@media (max-width: 900px) {
+  .gallery {
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .gallery .slick-list {
+      margin: 0 auto;
+      width: 260px; }
+    .gallery > div {
+      margin: 0 auto;
+      text-align: center; }
+  .new-arrivals {
+    position: relative; }
+    .new-arrivals .prev {
+      visibility: visible;
+      z-index: 10;
+      top: 50%;
+      left: 20%; }
+    .new-arrivals .next {
+      visibility: visible;
+      z-index: 10;
+      top: 50%;
+      right: 20%; } }
+
+@media (max-width: 768px) {
+  .new-arrivals {
+    position: relative; }
+    .new-arrivals .prev {
+      visibility: visible;
+      z-index: 10;
+      top: 50%;
+      left: 20%; }
+    .new-arrivals .next {
+      visibility: visible;
+      z-index: 10;
+      top: 50%;
+      right: 20%; } }
+
+@media (max-width: 630px) {
+  .telephone-login {
+    margin-top: 10px;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .telephone-login .login {
+      -webkit-align-self: center;
+          -ms-flex-item-align: center;
+              align-self: center;
+      margin: 5px auto; }
+  .header__nav {
+    height: auto; }
+    .header__nav .wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: normal;
+      -webkit-justify-content: normal;
+          -ms-flex-pack: normal;
+              justify-content: normal;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .header__nav .wrapper .header-menu-group {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .header__nav .wrapper .header-menu-group .header__nav-menu {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          .header__nav .wrapper .header-menu-group .header__nav-menu li {
+            padding: 2px;
+            margin: 2px; }
+        .header__nav .wrapper .header-menu-group .search, .header__nav .wrapper .header-menu-group .basket {
+          margin: 5px auto;
+          -webkit-align-self: auto;
+              -ms-flex-item-align: auto;
+                  align-self: auto; }
+          .header__nav .wrapper .header-menu-group .search .iconify, .header__nav .wrapper .header-menu-group .basket .iconify {
+            font-size: 24px; }
+        .header__nav .wrapper .header-menu-group .basket {
+          display: none;
+          position: absolute;
+          top: 0;
+          right: 30%; }
+  .new-collection:after {
+    left: 28%; }
+  .collection2018-info .catalog-btn {
+    margin: 0; }
+  .collection2018-info {
+    padding: 0 5px; }
+    .collection2018-info .new-collection:after {
+      left: 32%; }
+  .new-arrivals .new-collection {
+    margin: 50px auto;
+    font-size: 25px; }
+  .new-arrivals .new-collection:after {
+    left: 30%; }
+  .new-arrivals .gallery {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .new-arrivals .prev {
+    visibility: visible;
+    z-index: 10;
+    top: 40%;
+    left: 20%; }
+  .new-arrivals .next {
+    visibility: visible;
+    z-index: 10;
+    top: 40%;
+    right: 20%; }
+  .collection-and-season {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .collection-and-season .season {
+      width: auto;
+      padding-bottom: 30px; }
+      .collection-and-season .season h2 {
+        padding-top: 15px;
+        margin-bottom: 50px; }
+    .collection-and-season .collection {
+      width: auto; }
+      .collection-and-season .collection .new-collection {
+        font-size: 34px; }
+      .collection-and-season .collection .new-collection:after {
+        left: 34%; }
+  .collection2018 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto; }
+    .collection2018 .old-colletion-img {
+      width: auto; }
+    .collection2018 .collection2018-info {
+      width: auto; } }
+
+@media (max-width: 539px) {
+  .brand-collection {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .brand-collection img {
+      margin: 0 auto; } }
+
+@media (max-width: 420px) {
+  .subscribe {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 80px; }
+  footer .wrapper .mailing input {
+    margin-top: 5px;
+    width: 100%; }
+  footer .wrapper .mailing button {
+    margin: 5px 0;
+    width: 100%; }
+  .telephone-login ul li {
+    font-size: 10px;
+    margin: 0; }
+  .login {
+    font-size: 15px; } }
+
+/*# sourceMappingURL=style.css.map */
