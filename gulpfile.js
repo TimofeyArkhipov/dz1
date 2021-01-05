@@ -47,6 +47,8 @@ gulp.task('build', gulp.series('sass-compile', async function(){
         .pipe(gulp.dest('docs/slick'));
     gulp.src('src/img/*.*')
         .pipe(gulp.dest('docs/img'));
+    gulp.src('src/fonts/*.*')
+        .pipe(gulp.dest('docs/fonts'));
     gulp.src('src/*.html')
         .pipe(gulp.dest('docs'));
 }));

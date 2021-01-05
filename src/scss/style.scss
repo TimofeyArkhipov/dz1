@@ -2,14 +2,30 @@
 @import url('http://fonts.cdnfonts.com/css/post-no-bills-jaffna');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-//font-family: 'Post No Bills Jaffna', sans-serif;
-//font-family: 'Post No Bills Jaffna Light', sans-serif;
-//font-family: 'Post No Bills Jaffna Medium', sans-serif;
-//font-family: 'Post No Bills Jaffna SemiBold', sans-serif;
-//font-family: 'Post No Bills Jaffna ExtraBold', sans-serif;
+@font-face {
+  font-family: 'Post No Bills Jaffna';
+  src: url('../fonts/PostNoBillsJaffna-SemiBold.ttf');
+}
 
 
+
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. */
+
+//position: absolute;
+//width: 350px;
+//height: 42px;
+//left: 1165px;
+//top: 4061px;
+//
+//font-family: PT Sans;
+//font-style: normal;
+//font-weight: normal;
+//font-size: 14px;
+//line-height: 150%;
+//                  /* or 21px */
+//
+//                  /* white */
+//                color: #FFFFFF;
 
 
 
@@ -22,6 +38,7 @@
 
 body{
   font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
   font-size: 14px;
   padding: 0;
   margin: 0;
@@ -95,11 +112,12 @@ header{
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    //margin-bottom: 160px;
     .logo{
       a{
         text-decoration: none;
         font-size: 36px;
-        font-family: "Post No Bills Jaffna SemiBold";
+        font-family: "Post No Bills Jaffna";
         color: #FFFF;
       }
     }
@@ -107,6 +125,7 @@ header{
       display: flex;
       align-items: center;
       .header__nav-menu {
+        position: relative;
         list-style: none;
         display: flex;
         align-self: end;
@@ -154,15 +173,15 @@ header{
 
 .main__info{
   background: url("../img/Rectangle3.jpg") no-repeat center center;
-  //background-size: cover;
-  //padding-top: 160px;
-
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: auto;
+  //padding-top: 160px;
+  height: 810px;
   .porter__cube{
-    margin: 0 auto;
+
     display: flex;
     width: 320px;
     height: 320px;
@@ -172,7 +191,7 @@ header{
 
     h1{
       font-size: 64px;
-      font-family: "Post No Bills Jaffna SemiBold";
+      font-family: "Post No Bills Jaffna";
       font-style: normal;
       color: #FFFF;
       position: relative;
@@ -200,12 +219,12 @@ header{
     }
   }
   .lorem_info{
-    margin: 80px auto auto;
+    //margin: 80px auto auto;
     font-size: 16px;
     text-transform: uppercase;
     max-width: 730px;
     text-align: center;
-    padding-bottom: 130px;
+    margin: 80px auto 150px auto;
   }
 }
 
@@ -438,7 +457,7 @@ footer{
         margin-bottom: 48px;
       }
       p{
-        font-family: 'PT Sans', sans-serif;
+        font-family: 'PT Sans';
         width: 350px;
         line-height: 150%;
         font-size: 14px;
@@ -613,6 +632,7 @@ footer{
     width: 100%;
     justify-content: center;
     align-items: center;
+
     .slick-list{
       margin: 0 auto;
       width: 260px;
@@ -635,6 +655,9 @@ footer{
       z-index: 10;
       top: 50%;
       right: 20%;
+    }
+    .gallery{
+      margin-bottom: 50px;
     }
   }
 
@@ -663,10 +686,18 @@ footer{
   .telephone-login{
     margin-top: 10px;
     height: auto;
-    flex-direction: column;
+    //flex-direction: column;
     .login{
-      align-self: center;
-      margin: 5px auto;
+      align-self: end;
+      //margin: auto;
+    }
+    ul{
+      li:nth-child(3){
+        display: none;
+      }
+      li:nth-child(4){
+        display: none;
+      }
     }
   }
   .header__nav{
@@ -674,11 +705,12 @@ footer{
     .wrapper{
       //height: 190px;
       //flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      justify-content: space-between;
+      //align-items: center;
       .header-menu-group{
-        //flex-direction: column;
+        display: flex;
         .header__nav-menu{
+          //position: relative;
           //flex-direction: column;
           li{
             //padding: 2px;
@@ -800,15 +832,13 @@ footer{
    ul{
      //flex-direction: column;
      //justify-content: space-around;
-     li{
-       font-size: 10px;
-       margin: 0;
-     }
+     //li{
+     //  font-size: 10px;
+     //  margin: 0;
+     //}
    }
   }
-  .login{
-    font-size: 15px;
-  }
+
 }
 
 
@@ -838,7 +868,7 @@ footer{
     height: auto;
   }
   .header__nav .wrapper{
-    justify-content: center;
+    //justify-content: space-between;
   }
   .close-btn{
     display: block;

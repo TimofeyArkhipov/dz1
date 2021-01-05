@@ -1,10 +1,13 @@
 "use strict";
 let width = window.innerWidth;
-function adaptive() {
 
-    if (width < 900) {
-        // document.querySelector('.img-group').classList.add('one-time');
-        document.querySelector('.gallery').classList.add('one-time');
+window.addEventListener("resize", adaptive);
+
+
+function adaptive() {
+    if (width <= 900) {
+        document.querySelector('.img-group').classList.add('one-time');
+        $('.gallery').addClass('one-time');
         $('.one-time').slick({
             dots: false,
             infinite: true,
@@ -15,7 +18,7 @@ function adaptive() {
             nextArrow: '.next',
             prevArrow: '.prev',
         });
-    } else if (width >=1371) {
+    } else if (width >900) {
         $('.one-time').slick("unslick");
     }
 
@@ -34,7 +37,9 @@ let $normal_menu =  $('.header__nav-menu');
 
 if(width<680){
     $normal_menu.addClass('menu-wrap');
-} else if (width>680) {
+}
+if (width>680) {
+    $normal_menu.removeClass('menu-wrap');
     $normal_menu.removeClass('menu-wrap');
 }
 
@@ -49,4 +54,3 @@ $('.close-btn').on('click', function(){
 })
 
 
-// $('#close-btn').removeClass('menu-show');

@@ -1,12 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("http://fonts.cdnfonts.com/css/post-no-bills-jaffna");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: 'Post No Bills Jaffna';
+  src: url("../fonts/PostNoBillsJaffna-SemiBold.ttf"); }
+
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi semper viverra nunc cursus tortor lectus nunc nulla nibh. */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
 body {
   font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
   font-size: 14px;
   padding: 0;
   margin: 0;
@@ -125,7 +131,7 @@ header {
     .header__nav .wrapper .logo a {
       text-decoration: none;
       font-size: 36px;
-      font-family: "Post No Bills Jaffna SemiBold";
+      font-family: "Post No Bills Jaffna";
       color: #FFFF; }
     .header__nav .wrapper .header-menu-group {
       display: -webkit-box;
@@ -137,6 +143,7 @@ header {
           -ms-flex-align: center;
               align-items: center; }
       .header__nav .wrapper .header-menu-group .header__nav-menu {
+        position: relative;
         list-style: none;
         display: -webkit-box;
         display: -webkit-flex;
@@ -188,9 +195,13 @@ header {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  height: 810px; }
   .main__info .porter__cube {
-    margin: 0 auto;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -209,7 +220,7 @@ header {
             flex-direction: column; }
     .main__info .porter__cube h1 {
       font-size: 64px;
-      font-family: "Post No Bills Jaffna SemiBold";
+      font-family: "Post No Bills Jaffna";
       font-style: normal;
       color: #FFFF;
       position: relative;
@@ -231,12 +242,11 @@ header {
       top: 90%;
       left: 0; }
   .main__info .lorem_info {
-    margin: 80px auto auto;
     font-size: 16px;
     text-transform: uppercase;
     max-width: 730px;
     text-align: center;
-    padding-bottom: 130px; }
+    margin: 80px auto 150px auto; }
 
 .collection-and-season {
   max-width: 100%;
@@ -507,7 +517,7 @@ footer {
         font-style: normal;
         margin-bottom: 48px; }
       footer .wrapper .about p, footer .wrapper .category p, footer .wrapper .mailing p {
-        font-family: 'PT Sans', sans-serif;
+        font-family: 'PT Sans';
         width: 350px;
         line-height: 150%;
         font-size: 14px;
@@ -697,7 +707,9 @@ footer {
       visibility: visible;
       z-index: 10;
       top: 50%;
-      right: 20%; } }
+      right: 20%; }
+    .new-arrivals .gallery {
+      margin-bottom: 50px; } }
 
 @media (max-width: 768px) {
   .new-arrivals {
@@ -716,30 +728,29 @@ footer {
 @media (max-width: 630px) {
   .telephone-login {
     margin-top: 10px;
-    height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
+    height: auto; }
     .telephone-login .login {
-      -webkit-align-self: center;
-          -ms-flex-item-align: center;
-              align-self: center;
-      margin: 5px auto; }
+      -webkit-align-self: end;
+          -ms-flex-item-align: end;
+              align-self: end; }
+    .telephone-login ul li:nth-child(3) {
+      display: none; }
+    .telephone-login ul li:nth-child(4) {
+      display: none; }
   .header__nav {
     height: auto; }
     .header__nav .wrapper {
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-      -webkit-align-items: center;
-          -ms-flex-align: center;
-              align-items: center; }
-      .header__nav .wrapper .header-menu-group .header__nav-menu li {
-        margin: 2px; }
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .header__nav .wrapper .header-menu-group {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .header__nav .wrapper .header-menu-group .header__nav-menu li {
+          margin: 2px; }
   .new-collection:after {
     left: 28%; }
   .collection2018-info .catalog-btn {
@@ -835,12 +846,7 @@ footer {
     width: 100%; }
   footer .wrapper .mailing button {
     margin: 5px 0;
-    width: 100%; }
-  .telephone-login ul li {
-    font-size: 10px;
-    margin: 0; }
-  .login {
-    font-size: 15px; } }
+    width: 100%; } }
 
 .toggle-button {
   margin-top: 5px;
@@ -867,11 +873,6 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto; }
-  .header__nav .wrapper {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
   .close-btn {
     display: block;
     -webkit-align-self: end;
