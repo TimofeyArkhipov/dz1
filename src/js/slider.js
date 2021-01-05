@@ -6,7 +6,8 @@ window.addEventListener("resize", adaptive);
 
 function adaptive() {
     if (width <= 900) {
-        document.querySelector('.img-group').classList.add('one-time');
+        // $('.img-group').addClass('one-time');
+        // document.querySelector('.img-group').classList.add('one-time');
         $('.gallery').addClass('one-time');
         $('.one-time').slick({
             dots: false,
@@ -31,20 +32,20 @@ window.addEventListener('resize', function() {
 
 
 let $toggleButton = $('.toggle-button');
-let $menuWrap = $('.menu-wrap');
+// let $menuWrap = $('.menu-wrap');
 let $normal_menu =  $('.header__nav-menu');
 
 
-if(width<680){
-    $normal_menu.addClass('menu-wrap');
-}
-if (width>680) {
-    $normal_menu.removeClass('menu-wrap');
-    $normal_menu.removeClass('menu-wrap');
-}
+// if(width<680){
+//     $normal_menu.addClass('menu-wrap');
+// }
+// if (width>680) {
+//     $normal_menu.removeClass('menu-wrap');
+//     $normal_menu.removeClass('menu-wrap');
+// }
 
 $toggleButton.on('click', function() {
-    $(this).toggleClass('button-open');
+    // $(this).toggleClass('button-open');
     $normal_menu.toggleClass('menu-show');
 });
 
